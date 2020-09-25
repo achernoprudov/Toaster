@@ -54,7 +54,8 @@ open class ToastView: UIView {
     case .carPlay: return 30
     // default values
     case .unspecified: fallthrough
-    @unknown default: return 30
+    case .mac: fallthrough
+@unknown default: return 30
     }
   }()
 
@@ -68,6 +69,7 @@ open class ToastView: UIView {
     case .carPlay: return 20
     // default values
     case .unspecified: fallthrough
+    case .mac: fallthrough
     @unknown default: return 20
     }
   }()
@@ -134,6 +136,7 @@ open class ToastView: UIView {
       case .carPlay: return .systemFont(ofSize: 12)
       // default values
       case .unspecified: fallthrough
+      case .mac: fallthrough
       @unknown default: return .systemFont(ofSize: 12)
       }
     }()

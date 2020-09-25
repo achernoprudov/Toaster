@@ -3,8 +3,6 @@ Toaster
 
 [![Build Status](https://travis-ci.org/devxoul/Toaster.svg?branch=master)](https://travis-ci.org/devxoul/Toaster)
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/Toaster.svg?style=flat)](https://cocoapods.org/?q=name%3AToaster%20author%3Adevxoul)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Android-like toast with very simple interface. (formerly JLToast)
 
@@ -12,7 +10,7 @@ Android-like toast with very simple interface. (formerly JLToast)
 Screenshots
 -----------
 
-![Toaster Screenshot](https://raw.github.com/devxoul/Toaster/master/Screenshots/Toaster.png)
+![Toaster Screenshot](https://raw.github.com/EnesKaraosman/Toaster/master/Screenshots/Toaster.png)
 
 
 Features
@@ -37,24 +35,12 @@ Toast(text: "Hello, world!").show()
 Installation
 ------------
 
-- **For iOS 8+ projects with [CocoaPods](https://cocoapods.org):**
-
-    ```ruby
-    pod 'Toaster'
-    ```
-
-- **For iOS 8+ projects with [Carthage](https://github.com/Carthage/Carthage):**
-
-    ```
-    github "devxoul/Toaster"
-    ```
-
-- **For iOS 8+ and Xcode 11+ projects with [Swift Package Manager](https://github.com/apple/swift-package-manager):**
+- **For iOS 13+ and Xcode 12+ projects with [Swift Package Manager](https://github.com/apple/swift-package-manager):**
 
 
     ```
     dependencies: [
-        .package(url: "https://github.com/devxoul/Toaster.git", from: "master")
+        .package(url: "https://github.com/EnesKaraosman/Toaster.git", from: "master")
     ]
     ```
 
@@ -135,9 +121,3 @@ By default, VoiceOver with UIAccessibility is enabled since Toaster 2.3.0. To di
 ```swift
 ToastCenter.default.isSupportAccessibility = false
 ```
-
-
-License
--------
-
-Toaster is under [WTFPL](http://www.wtfpl.net/). You can do what the fuck you want with Toast. See [LICENSE](LICENSE) file for more info.
